@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Brasil - Sua Próxima Aventura Começa Aqui</title>
+    <meta name="description" content="Explore as maravilhas do Brasil! Descubra destinos incríveis, cultura rica e gastronomia única. Reserve sua viagem agora!">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-map-marked-alt"></i> Descubra o Brasil</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#destinos" class="nav-link">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cultura" class="nav-link">Cultura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gastronomia" class="nav-link">Gastronomia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#voos" class="nav-link">Voos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button class="cta-button">Reserve sua viagem</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Descubra as Maravilhas do Brasil</h1>
+            <p class="hero-subtitle">Um país de belezas naturais incomparáveis, cultura vibrante e pessoas acolhedoras te espera</p>
+            
+            <!-- Flight Search Form -->
+            <div class="flight-search">
+                <h3>Encontre seu voo para o Brasil</h3>
+                <form class="search-form" id="flightSearchForm">
+                    <div class="form-group">
+                        <label for="origem">De onde você vem?</label>
+                        <input type="text" id="origem" placeholder="Cidade de origem" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destino">Para onde no Brasil?</label>
+                        <select id="destino" required>
+                            <option value="">Escolha seu destino</option>
+                            <option value="rio">Rio de Janeiro</option>
+                            <option value="sao-paulo">São Paulo</option>
+                            <option value="salvador">Salvador</option>
+                            <option value="brasilia">Brasília</option>
+                            <option value="manaus">Manaus</option>
+                            <option value="foz-iguacu">Foz do Iguaçu</option>
+                            <option value="sao-luis">São Luís</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ida">Data de ida</label>
+                        <input type="date" id="ida" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volta">Data de volta</label>
+                        <input type="date" id="volta">
+                    </div>
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i> Buscar Voos
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos Section -->
+    <section id="destinos" class="destinos">
+        <div class="container">
+            <h2 class="section-title">Destinos Imperdíveis</h2>
+            <p class="section-subtitle">Explore os lugares mais incríveis do Brasil</p>
+            
+            <div class="destinos-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="destinosTrack">
+                        <!-- Cristo Redentor -->
+                        <div class="destino-card">
+                            <div class="card-image">
+                                <img src="img/cristo_redentor.jpg" alt="Cristo Redentor">
+                                <div class="card-overlay">
+                                    <button class="card-button">Explorar</button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Cristo Redentor</h3>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Rio de Janeiro</p>
+                                <p class="card-description">Uma das Sete Maravilhas do Mundo Moderno, oferecendo uma vista espetacular da Cidade Maravilhosa.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cataratas do Iguaçu -->
+                        <div class="destino-card">
+                            <div class="card-image">
+                                <img src="img/cataratas_iguacu.jpg" alt="Cataratas do Iguaçu">
+                                <div class="card-overlay">
+                                    <button class="card-button">Explorar</button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Cataratas do Iguaçu</h3>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Foz do Iguaçu, Paraná</p>
+                                <p class="card-description">275 quedas d\'água em meio à exuberante Mata Atlântica. Um espetáculo da natureza.</p>
+                            </div>
+                        </div>
+
+                        <!-- Lençóis Maranhenses -->
+                        <div class="destino-card">
+                            <div class="card-image">
+                                <img src="img/lencois_maranhenses.png" alt="Lençóis Maranhenses">
+                                <div class="card-overlay">
+                                    <button class="card-button">Explorar</button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Lençóis Maranhenses</h3>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Maranhão</p>
+                                <p class="card-description">Dunas de areia branca e lagoas cristalinas formam uma paisagem única no mundo.</p>
+                            </div>
+                        </div>
+
+                        <!-- Amazônia -->
+                        <div class="destino-card">
+                            <div class="card-image">
+                                <img src="img/floresta_amazonica.jpg" alt="Floresta Amazônica">
+                                <div class="card-overlay">
+                                    <button class="card-button">Explorar</button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Floresta Amazônica</h3>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Região Norte</p>
+                                <p class="card-description">O pulmão do mundo oferece uma experiência única de contato com a natureza selvagem.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pelourinho -->
+                        <div class="destino-card">
+                            <div class="card-image">
+                                <img src="img/pelourinho_salvador.jpg" alt="Pelourinho Salvador">
+                                <div class="card-overlay">
+                                    <button class="card-button">Explorar</button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Pelourinho</h3>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Salvador, Bahia</p>
+                                <p class="card-description">Centro histórico colonial com arquitetura preservada e rica cultura afro-brasileira.</p>
+                            </div>
+                        </div>
+
+                        <!-- Copacabana -->
+                        <div class="destino-card">
+                            <div class="card-image">
+                                <img src="img/hero_background.jpg" alt="Praia de Copacabana">
+                                <div class="card-overlay">
+                                    <button class="card-button">Explorar</button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Praia de Copacabana</h3>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Rio de Janeiro</p>
+                                <p class="card-description">A praia mais famosa do mundo, com 4km de areia dourada e vida noturna vibrante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultura Section -->
+    <section id="cultura" class="cultura">
+        <div class="container">
+            <h2 class="section-title">Cultura Vibrante</h2>
+            <p class="section-subtitle">Mergulhe na riqueza cultural brasileira</p>
+            
+            <div class="cultura-grid">
+                <div class="cultura-item">
+                    <div class="cultura-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Música</h3>
+                    <p>Do samba ao forró, da bossa nova ao funk carioca. A música brasileira é diversa e contagiante.</p>
+                </div>
+                
+                <div class="cultura-item">
+                    <div class="cultura-icon">
+                        <i class="fas fa-masks-theater"></i>
+                    </div>
+                    <h3>Festivais</h3>
+                    <p>Carnaval, Festa Junina, Festival de Parintins. Celebrações que mostram a alegria do povo brasileiro.</p>
+                </div>
+                
+                <div class="cultura-item">
+                    <div class="cultura-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Capoeira</h3>
+                    <p>Arte marcial que combina luta, dança, música e acrobacia. Patrimônio Cultural da Humanidade.</p>
+                </div>
+                
+                <div class="cultura-item">
+                    <div class="cultura-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Arte</h3>
+                    <p>Do barroco mineiro ao grafite urbano. A arte brasileira reflete nossa diversidade cultural.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastronomia Section -->
+    <section id="gastronomia" class="gastronomia">
+        <div class="container">
+            <h2 class="section-title">Sabores do Brasil</h2>
+            <p class="section-subtitle">Uma viagem gastronômica inesquecível</p>
+            
+            <div class="gastronomia-grid">
+                <div class="prato-card">
+                    <div class="prato-image">
+                        <i class="fas fa-bowl-food"></i>
+                    </div>
+                    <h3>Feijoada</h3>
+                    <p>O prato nacional brasileiro. Feijão preto com carnes defumadas, servido com farofa, couve e laranja.</p>
+                </div>
+                
+                <div class="prato-card">
+                    <div class="prato-image">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3>Moqueca</h3>
+                    <p>Peixe cozido no leite de coco com dendê, pimentões e temperos. Especialidade capixaba e baiana.</p>
+                </div>
+                
+                <div class="prato-card">
+                    <div class="prato-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Açaí</h3>
+                    <p>Fruto amazônico rico em antioxidantes, servido como vitamina ou tigela com granola e frutas.</p>
+                </div>
+                
+                <div class="prato-card">
+                    <div class="prato-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Pão de Açúcar</h3>
+                    <p>Doce tradicional brasileiro feito com açúcar, ovos e farinha, símbolo da doçaria nacional.</p>
+                </div>
+                
+                <div class="prato-card">
+                    <div class="prato-image">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>Acarajé</h3>
+                    <p>Bolinho de feijão fradinho frito no dendê, recheado com vatapá, caruru e camarão seco.</p>
+                </div>
+                
+                <div class="prato-card">
+                    <div class="prato-image">
+                        <i class="fas fa-glass-water"></i>
+                    </div>
+                    <h3>Caipirinha</h3>
+                    <p>Drink nacional feito com cachaça, limão, açúcar e gelo. Refrescante e autenticamente brasileiro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Voos Section -->
+            <section id="voos" class="voos">
+                <div class="container">
+                    <h2 class="section-title">Planeje sua Viagem</h2>
+                    <p class="section-subtitle">Encontre os melhores voos para o Brasil</p>
+                    
+                    <div class="voos-content">
+                        <div class="flight-results" id="flightResults" style="display: none;">
+                            <h3>Voos Disponíveis</h3>
+                            <div class="results-container" id="resultsContainer">
+                                <!-- Results will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="flight-info">
+                            <h3>Por que escolher o Brasil?</h3>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-plane"></i>
+                                    <h4>Voos Diretos</h4>
+                                    <p>Conexões diretas das principais cidades do mundo</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h4>Ano Todo</h4>
+                                    <p>Clima tropical permite viagens em qualquer época</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-heart"></i>
+                                    <h4>Hospitalidade</h4>
+                                    <p>Povo acolhedor e receptivo com turistas</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <h4>Custo-Benefício</h4>
+                                    <p>Experiências incríveis com ótimo custo-benefício</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Depoimentos Section -->
+            <section class="depoimentos">
+                <div class="container">
+                    <h2 class="section-title">O que dizem nossos viajantes</h2>
+                    <p class="section-subtitle">Experiências reais de quem já visitou o Brasil</p>
+                    
+                    <div class="depoimentos-carousel">
+                        <div class="depoimento-card">
+                            <div class="depoimento-content">
+                                <p>"O Brasil superou todas as minhas expectativas! As paisagens são de tirar o fôlego e o povo é incrivelmente acolhedor. Já estou planejando minha próxima viagem!"</p>
+                            </div>
+                            <div class="depoimento-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Maria Silva</h4>
+                                    <span>Portugal</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="depoimento-card">
+                            <div class="depoimento-content">
+                                <p>"A diversidade cultural do Brasil é fascinante. Cada região tem sua própria identidade, mas todas compartilham a mesma alegria de viver. Experiência transformadora!"</p>
+                            </div>
+                            <div class="depoimento-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>John Smith</h4>
+                                    <span>Estados Unidos</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="depoimento-card">
+                            <div class="depoimento-content">
+                                <p>"As Cataratas do Iguaçu são simplesmente espetaculares! E a gastronomia brasileira conquistou meu coração. Cada refeição foi uma descoberta deliciosa."</p>
+                            </div>
+                            <div class="depoimento-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sophie Dubois</h4>
+                                    <span>França</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="contato" class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3><i class="fas fa-map-marked-alt"></i> Descubra o Brasil</h3>
+                            <p>Sua porta de entrada para as maravilhas do Brasil. Explore, descubra e viva experiências inesquecíveis.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Destinos</h4>
+                            <ul>
+                                <li><a href="#">Rio de Janeiro</a></li>
+                                <li><a href="#">São Paulo</a></li>
+                                <li><a href="#">Salvador</a></li>
+                                <li><a href="#">Amazônia</a></li>
+                                <li><a href="#">Foz do Iguaçu</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Informações</h4>
+                            <ul>
+                                <li><a href="#">Como chegar</a></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Dicas de viagem</a></li>
+                                <li><a href="#">Seguro viagem</a></li>
+                                <li><a href="#">Câmbio</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Contato</h4>
+                            <div class="contact-info">
+                                <p><i class="fas fa-phone"></i> +55 (11) 1234-5678</p>
+                                <p><i class="fas fa-envelope"></i> contato@descobraobrasil.com</p>
+                                <p><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Descubra o Brasil. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- JavaScript -->
+            <script>
+// Variáveis globais
+let currentSlide = 0;
+const slides = document.querySelectorAll(".destino-card");
+const totalSlides = slides.length;
+
+// Dados simulados de voos
+const flightData = {
+    'rio': [
+        {
+            airline: 'LATAM Airlines',
+            departure: '14:30',
+            arrival: '18:45',
+            duration: '4h 15m',
+            price: 'R$ 1.250',
+            origin: 'São Paulo',
+            destination: 'Rio de Janeiro'
+        },
+        {
+            airline: 'Gol Linhas Aéreas',
+            departure: '09:15',
+            arrival: '13:30',
+            duration: '4h 15m',
+            price: 'R$ 980',
+            origin: 'Porto Alegre',
+            destination: 'Rio de Janeiro'
+        },
+        {
+            airline: 'Azul Linhas Aéreas',
+            departure: '16:20',
+            arrival: '20:35',
+            duration: '4h 15m',
+            price: 'R$ 1.150',
+            origin: 'Salvador',
+            destination: 'Rio de Janeiro'
+        }
+    ],
+    'sao-paulo': [
+        {
+            airline: 'LATAM Airlines',
+            departure: '08:00',
+            arrival: '12:15',
+            duration: '4h 15m',
+            price: 'R$ 1.180',
+            origin: 'Rio de Janeiro',
+            destination: 'São Paulo'
+        },
+        {
+            airline: 'Gol Linhas Aéreas',
+            departure: '15:45',
+            arrival: '20:00',
+            duration: '4h 15m',
+            price: 'R$ 920',
+            origin: 'Porto Alegre',
+            destination: 'São Paulo'
+        }
+    ],
+    'salvador': [
+        {
+            airline: 'LATAM Airlines',
+            departure: '11:30',
+            arrival: '14:20',
+            duration: '2h 50m',
+            price: 'R$ 1.450',
+            origin: 'Porto Alegre',
+            destination: 'Salvador'
+        },
+        {
+            airline: 'Azul Linhas Aéreas',
+            departure: '17:10',
+            arrival: '20:00',
+            duration: '2h 50m',
+            price: 'R$ 1.320',
+            origin: 'São Paulo',
+            destination: 'Salvador'
+        }
+    ],
+    'brasilia': [
+        {
+            airline: 'Gol Linhas Aéreas',
+            departure: '07:45',
+            arrival: '09:15',
+            duration: '2h 30m',
+            price: 'R$ 850',
+            origin: 'Porto Alegre',
+            destination: 'Brasília'
+        },
+        {
+            airline: 'LATAM Airlines',
+            departure: '19:30',
+            arrival: '21:00',
+            duration: '1h 30m',
+            price: 'R$ 950',
+            origin: 'São Paulo',
+            destination: 'Brasília'
+        }
+    ],
+    'manaus': [
+        {
+            airline: 'Azul Linhas Aéreas',
+            departure: '13:20',
+            arrival: '16:45',
+            duration: '3h 25m',
+            price: 'R$ 1.680',
+            origin: 'Porto Alegre',
+            destination: 'Manaus'
+        },
+        {
+            airline: 'LATAM Airlines',
+            departure: '22:15',
+            arrival: '01:40+1',
+            duration: '2h 25m',
+            price: 'R$ 1.750',
+            origin: 'São Paulo',
+            destination: 'Manaus'
+        }
+    ],
+    'foz-iguacu': [
+        {
+            airline: 'Gol Linhas Aéreas',
+            departure: '10:30',
+            arrival: '12:15',
+            duration: '2h 05m',
+            price: 'R$ 780',
+            origin: 'Porto Alegre',
+            destination: 'Foz do Iguaçu'
+        },
+        {
+            airline: 'Azul Linhas Aéreas',
+            departure: '16:50',
+            arrival: '18:35',
+            duration: '1h 45m',
+            price: 'R$ 820',
+            origin: 'São Paulo',
+            destination: 'Foz do Iguaçu'
+        }
+    ],
+    'sao-luis': [
+        {
+            airline: 'LATAM Airlines',
+            departure: '12:40',
+            arrival: '16:10',
+            duration: '3h 30m',
+            price: 'R$ 1.580',
+            origin: 'Porto Alegre',
+            destination: 'São Luís'
+        },
+        {
+            airline: 'Gol Linhas Aéreas',
+            departure: '20:25',
+            arrival: '23:55',
+            duration: '2h 30m',
+            price: 'R$ 1.420',
+            origin: 'São Paulo',
+            destination: 'São Luís'
+        }
+    ]
+};
+
+// Inicialização quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCarousel();
+    initializeNavigation();
+    initializeFlightSearch();
+    initializeScrollAnimations();
+    setMinDate();
+});
+
+// Navegação mobile
+function initializeNavigation() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (mobileMenu && navMenu) {
+        mobileMenu.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+
+    // Scroll suave para seções
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = target.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Efeito de transparência no header ao fazer scroll
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+    });
+}
+
+// Carrossel de destinos
+function initializeCarousel() {
+    const track = document.getElementById('destinosTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.getElementById('carouselIndicators');
+
+    if (!track || !prevBtn || !nextBtn || !indicatorsContainer) return;
+
+    // Criar indicadores
+    for (let i = 0; i < totalSlides; i++) {
+        const indicator = document.createElement('div');
+        indicator.classList.add('indicator');
+        if (i === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => goToSlide(i));
+        indicatorsContainer.appendChild(indicator);
+    }
+
+    // Event listeners para botões
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    // Auto-play (opcional)
+    setInterval(nextSlide, 5000);
+
+    // Touch/swipe support para mobile
+    let startX = 0;
+    let endX = 0;
+
+    track.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+    });
+
+    track.addEventListener('touchend', function(e) {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const threshold = 50;
+        const diff = startX - endX;
+
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const track = document.getElementById('destinosTrack');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    if (!track) return;
+
+    // Calcular o deslocamento baseado no tamanho do card + margin
+    const cardWidth = 380; // 350px + 30px margin
+    const offset = -currentSlide * cardWidth;
+    
+    track.style.transform = `translateX(${offset}px)`;
+
+    // Atualizar indicadores
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// Sistema de busca de voos
+function initializeFlightSearch() {
+    const searchForm = document.getElementById('flightSearchForm');
+    
+    if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleFlightSearch();
+        });
+    }
+}
+
+function handleFlightSearch() {
+    const origem = document.getElementById('origem').value;
+    const destino = document.getElementById('destino').value;
+    const ida = document.getElementById('ida').value;
+    const volta = document.getElementById('volta').value;
+
+    if (!origem || !destino || !ida) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+    }
+
+    // Simular busca
+    showLoadingState();
+    
+    setTimeout(() => {
+        displayFlightResults(destino, origem);
+        scrollToResults();
+    }, 1500);
+}
+
+function showLoadingState() {
+    const resultsContainer = document.getElementById('resultsContainer');
+    const flightResults = document.getElementById('flightResults');
+    
+    if (resultsContainer && flightResults) {
+        resultsContainer.innerHTML = `
+            <div class="loading-state">
+                <i class="fas fa-plane fa-spin" style="font-size: 2rem; color: #009639; margin-bottom: 1rem;"></i>
+                <p>Buscando os melhores voos para você...</p>
+            </div>
+        `;
+        flightResults.style.display = 'block';
+    }
+}
+
+function displayFlightResults(destino, origem) {
+    const resultsContainer = document.getElementById('resultsContainer');
+    const flights = flightData[destino] || [];
+
+    if (!resultsContainer) return;
+
+    if (flights.length === 0) {
+        resultsContainer.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-exclamation-circle" style="font-size: 2rem; color: #ffc107; margin-bottom: 1rem;"></i>
+                <p>Nenhum voo encontrado para este destino. Tente outro destino ou entre em contato conosco.</p>
+            </div>
+        `;
+        return;
+    }
+
+    let resultsHTML = '';
+    flights.forEach((flight, index) => {
+        resultsHTML += `
+            <div class="flight-card" style="animation-delay: ${index * 0.1}s">
+                <div class="flight-header">
+                    <span class="airline">${flight.airline}</span>
+                    <span class="price">${flight.price}</span>
+                </div>
+                <div class="flight-details">
+                    <div class="flight-time">
+                        <div class="time">${flight.departure}</div>
+                        <div class="city">${flight.origin}</div>
+                    </div>
+                    <div class="flight-duration">
+                        <i class="fas fa-plane"></i>
+                        <span>${flight.duration}</span>
+                    </div>
+                    <div class="flight-time">
+                        <div class="time">${flight.arrival}</div>
+                        <div class="city">${flight.destination}</div>
+                    </div>
+                </div>
+                <button class="book-button" onclick="bookFlight('${flight.airline}', '${flight.price}')">
+                    <i class="fas fa-ticket-alt"></i> Reservar Agora
+                </button>
+            </div>
+        `;
+    });
+
+    resultsContainer.innerHTML = resultsHTML;
+}
+
+function bookFlight(airline, price) {
+    // Simular processo de reserva
+    const modal = createBookingModal(airline, price);
+    document.body.appendChild(modal);
+    
+    // Mostrar modal
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+}
+
+function createBookingModal(airline, price) {
+    const modal = document.createElement('div');
+    modal.className = 'booking-modal';
+    modal.innerHTML = `
+        <div class="modal-overlay" onclick="closeBookingModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-plane"></i> Reservar Voo</h3>
+                <button class="close-btn" onclick="closeBookingModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="booking-info">
+                    <p><strong>Companhia:</strong> ${airline}</p>
+                    <p><strong>Preço:</strong> ${price}</p>
+                </div>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="passenger-name">Nome do Passageiro</label>
+                        <input type="text" id="passenger-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger-email">E-mail</label>
+                        <input type="email" id="passenger-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger-phone">Telefone</label>
+                        <input type="tel" id="passenger-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger-document">CPF/Passaporte</label>
+                        <input type="text" id="passenger-document" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="cancel-btn" onclick="closeBookingModal()">Cancelar</button>
+                <button class="confirm-btn" onclick="confirmBooking()">
+                    <i class="fas fa-credit-card"></i> Finalizar Reserva
+                </button>
+            </div>
+        </div>
+    `;
+
+    // Adicionar estilos do modal
+    const style = document.createElement('style');
+    style.textContent = `
+        .booking-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .booking-modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .modal-header h3 {
+            margin: 0;
+            color: #009639;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #6c757d;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .close-btn:hover {
+            background: #f8f9fa;
+            color: #343a40;
+        }
+        
+        .modal-body {
+            padding: 1.5rem;
+        }
+        
+        .booking-info {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .booking-info p {
+            margin: 0.5rem 0;
+            color: #343a40;
+        }
+        
+        .booking-form .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .booking-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #343a40;
+        }
+        
+        .booking-form input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .booking-form input:focus {
+            outline: none;
+            border-color: #009639;
+        }
+        
+        .modal-footer {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .cancel-btn, .confirm-btn {
+            flex: 1;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .cancel-btn {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .cancel-btn:hover {
+            background: #5a6268;
+        }
+        
+        .confirm-btn {
+            background: linear-gradient(135deg, #009639, #00B04F);
+            color: white;
+        }
+        
+        .confirm-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 150, 57, 0.3);
+        }
+    `;
+    
+    if (!document.querySelector('#modal-styles')) {
+        style.id = 'modal-styles';
+        document.head.appendChild(style);
+    }
+
+    return modal;
+}
+
+function closeBookingModal() {
+    const modal = document.querySelector('.booking-modal');
+    if (modal) {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.remove();
+        }, 300);
+    }
+}
+
+function confirmBooking() {
+    const name = document.getElementById('passenger-name').value;
+    const email = document.getElementById('passenger-email').value;
+    const phone = document.getElementById('passenger-phone').value;
+    const document = document.getElementById('passenger-document').value;
+
+    if (!name || !email || !phone || !document) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    // Simular processamento
+    const confirmBtn = document.querySelector('.confirm-btn');
+    const originalText = confirmBtn.innerHTML;
+    
+    confirmBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processando...';
+    confirmBtn.disabled = true;
+
+    setTimeout(() => {
+        closeBookingModal();
+        showSuccessMessage();
+    }, 2000);
+}
+
+function showSuccessMessage() {
+    const successModal = document.createElement('div');
+    successModal.className = 'success-modal';
+    successModal.innerHTML = `
+        <div class="modal-overlay" onclick="closeSuccessModal()"></div>
+        <div class="modal-content">
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Reserva Confirmada!</h3>
+                <p>Sua reserva foi realizada com sucesso. Você receberá um e-mail de confirmação em breve.</p>
+                <button class="ok-btn" onclick="closeSuccessModal()">OK</button>
+            </div>
+        </div>
+    `;
+
+    // Adicionar estilos para o modal de sucesso
+    const style = document.createElement('style');
+    style.textContent = `
+        .success-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .success-modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .success-content {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+        
+        .success-content h3 {
+            color: #009639;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+        
+        .success-content p {
+            color: #6c757d;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .ok-btn {
+            background: linear-gradient(135deg, #009639, #00B04F);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .ok-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 150, 57, 0.3);
+        }
+    `;
+    
+    if (!document.querySelector('#success-modal-styles')) {
+        style.id = 'success-modal-styles';
+        document.head.appendChild(style);
+    }
+
+    document.body.appendChild(successModal);
+    
+    setTimeout(() => {
+        successModal.classList.add('show');
+    }, 10);
+}
+
+function closeSuccessModal() {
+    const modal = document.querySelector('.success-modal');
+    if (modal) {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.remove();
+        }, 300);
+    }
+}
+
+function scrollToResults() {
+    const flightResults = document.getElementById('flightResults');
+    if (flightResults) {
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const targetPosition = flightResults.offsetTop - headerHeight - 20;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Definir data mínima como hoje
+function setMinDate() {
+    const today = new Date().toISOString().split('T')[0];
+    const idaInput = document.getElementById('ida');
+    const voltaInput = document.getElementById('volta');
+    
+    if (idaInput) {
+        idaInput.min = today;
+        idaInput.addEventListener('change', function() {
+            if (voltaInput) {
+                voltaInput.min = this.value;
+            }
+        });
+    }
+    
+    if (voltaInput) {
+        voltaInput.min = today;
+    }
+}
+
+// Animações de scroll
+function initializeScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-up');
+            }
+        });
+    }, observerOptions);
+
+    // Observar elementos que devem ter animação
+    const elementsToAnimate = document.querySelectorAll('.destino-card, .cultura-item, .prato-card, .depoimento-card');
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+}
+
+// Função para o botão CTA do header
+document.addEventListener('DOMContentLoaded', function() {
+    const ctaButton = document.querySelector('.cta-button');
+    if (ctaButton) {
+        ctaButton.addEventListener('click', function() {
+            const voosSection = document.getElementById('voos');
+            if (voosSection) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = voosSection.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+});
+
+// Função para explorar destinos
+function exploreDestination(destinationName) {
+    alert(`Explorando ${destinationName}! Em breve, mais informações detalhadas sobre este destino incrível.`);
+}
+
+// Adicionar event listeners para os botões de explorar
+document.addEventListener('DOMContentLoaded', function() {
+    const exploreButtons = document.querySelectorAll('.card-button');
+    exploreButtons.forEach((button, index) => {
+        const destinations = ['Cristo Redentor', 'Cataratas do Iguaçu', 'Lençóis Maranhenses', 'Floresta Amazônica', 'Pelourinho', 'Praia de Copacabana'];
+        button.addEventListener('click', function() {
+            exploreDestination(destinations[index] || 'este destino');
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+
+
